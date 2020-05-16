@@ -1,0 +1,15 @@
+{
+  "name": "noadev",
+  "version": "0.0.1",
+  "description": "noa.dev site",
+  "dependencies": {
+    "express": "^4.15.2",
+    "gtfs-realtime-bindings": "0.0.4",
+    "request": "^2.88.0",
+    "rtd-realtime": "github:steveszc/rtd-realtime",
+    "socket.io": "^1.7.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

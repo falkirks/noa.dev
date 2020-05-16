@@ -17,6 +17,7 @@ function getPositions(cb){
           res.push({id: entity.vehicle.vehicle.id, lat: entity.vehicle.position.latitude, lon: entity.vehicle.position.longitude, time: entity.vehicle.timestamp});
         }
       });
+      feed = null;
       cb(null, res);
     } else {
       cb(error, null);

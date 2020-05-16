@@ -4,10 +4,10 @@
   "description": "noa.dev site",
   "dependencies": {
     "express": "^4.15.2",
-    "gtfs-realtime-bindings": "0.0.4",
+    "gtfs-realtime-bindings": "0.0.5",
     "request": "^2.88.0",
     "rtd-realtime": "github:steveszc/rtd-realtime",
-    "socket.io": "^1.7.3"
+    "socket.io": "^2.3.0"
   },
   "scripts": {
     "start": "node index.js"

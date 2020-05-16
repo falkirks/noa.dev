@@ -10,11 +10,11 @@ let requestSettings = {
 function getPositions(cb){
   request(requestSettings, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      var feed = GtfsRealtimeBindings.FeedMessage.decode(body);
+      var feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(body);
       var res = [];
       feed.entity.forEach(function(entity) {
         if (entity.vehicle) {
-          res.push({id: entity.vehicle.vehicle.id, lat: entity.vehicle.position.latitude, lon: entity.vehicle.position.longitude, time: entity.vehicle.timestamp})
+          res.push({id: entity.vehicle.vehicle.id, lat: entity.vehicle.position.latitude, lon: entity.vehicle.position.longitude, time: entity.vehicle.timestamp});
         }
       });
       cb(null, res);

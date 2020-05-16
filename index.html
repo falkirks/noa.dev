@@ -18,6 +18,7 @@
         }
         .for{
             background-color: white;
+            background-color:rgba(255, 255, 255, 0.5);
         }
     </style>
 </head>
@@ -70,11 +71,11 @@
       buses.push(data);
     });
     function remapY(lat) {
-      return (lat - 49.020309) * canvas.height / (49.384949 - 49.020309);
+      return canvas.height - ((lat - 49.020309) * canvas.height / (49.384949 - 49.020309));
     }
 
     function remapX(lon) {
-      return (lon - -122.474804) * canvas.width / (-123.338127 - -122.474804);
+      return canvas.width - ((lon - -122.474804) * canvas.width / (-123.338127 - -122.474804));
     }
 
     window.onresize = function(e) {

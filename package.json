@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "noa.dev site",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.18.2",
     "gtfs-realtime-bindings": "0.0.5",
     "request": "^2.88.0",
     "rtd-realtime": "github:steveszc/rtd-realtime",
